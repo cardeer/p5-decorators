@@ -1,4 +1,4 @@
-import BaseModule from './BaseModule'
+import { BaseModule } from './BaseModule'
 
 export class BaseCanvas {
   public modules = {}

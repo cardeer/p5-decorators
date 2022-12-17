@@ -5,6 +5,10 @@
   "main": "index.js",
   "license": "MIT",
   "author": "CARDEER <cardeer.dev@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cardeer/p5-decorators"
+  },
   "scripts": {
     "build": "rm -rf ./dist && tsc && cp ./package.json ./dist",
     "pub": "yarn build && cd dist && npm publish"

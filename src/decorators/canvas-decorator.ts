@@ -1,7 +1,7 @@
 import p5 from 'p5'
 import { BaseCanvas } from '../BaseCanvas'
 
-export default function Canvas(selector: string) {
+export function Canvas(selector: string) {
   return function <T extends { new (...args: any[]): BaseCanvas }>(
     constructor: T
   ) {

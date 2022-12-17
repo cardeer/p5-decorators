@@ -10,7 +10,7 @@
     "url": "https://github.com/cardeer/p5-decorators"
   },
   "scripts": {
-    "build": "rm -rf ./dist && tsc && cp ./package.json ./dist",
+    "build": "rm -rf ./dist && tsc && cp ./package.json ./dist && cp ./README.md ./dist",
     "pub": "yarn build && cd dist && npm publish"
   },
   "publishConfig": {

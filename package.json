@@ -1,0 +1,21 @@
+{
+  "name": "p5-decorators",
+  "description": "Decorators for p5.js that helps you write p5.js with typescript easier.",
+  "version": "0.0.3",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "CARDEER <cardeer.dev@gmail.com>",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc && cp ./package.json ./dist",
+    "pub": "yarn build && cd dist && npm publish"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "p5": "^1.5.0"
+  },
+  "devDependencies": {
+    "@types/p5": "^1.4.3"
+  }
+}

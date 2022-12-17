@@ -1,7 +1,7 @@
 {
   "name": "p5-decorators",
   "description": "Decorators for p5.js that helps you write p5.js with typescript easier.",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "main": "index.js",
   "license": "MIT",
   "author": "CARDEER <cardeer.dev@gmail.com>",

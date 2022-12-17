@@ -7,6 +7,6 @@ export class BaseCanvas {
 
   public register<M extends { new (): BaseModule }>(module: M) {
     const M2 = new module()
-    this.modules[M2.type] = M2.draw
+    this.modules[M2.type] = M2.render.bind(M2)
   }
 }

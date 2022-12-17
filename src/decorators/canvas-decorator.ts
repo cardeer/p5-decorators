@@ -1,13 +1,17 @@
 import p5 from 'p5'
 import { BaseCanvas } from '../BaseCanvas'
 
-export function Canvas(selector: string) {
+export function Canvas(selector?: string) {
   return function <T extends { new (...args: any[]): BaseCanvas }>(
     constructor: T
   ) {
     return class extends constructor {
       public start() {
-        const element: HTMLElement | null = document.querySelector(selector)
+        let element: HTMLElement | null = null
+
+        if (selector) {
+          element = document.querySelector(selector)
+        }
 
         const keys = Object.keys(this.modules)
 
